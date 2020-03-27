@@ -1,0 +1,28 @@
+.list-header {
+  color: white;
+  font-family: Papyrus, Trebuchet MS, Arial, Helvetica !important;
+  font-size: large !important;
+  height: 100% !important;
+  width: auto;  
+}
+  
+.list-item {
+  height: 30px !important; 
+}
+
+.list-icon {
+  color: white;
+}
+
+.list-icon::before{
+    background:transparent;
+    background-color: transparent !important;
+}
+
+.transparent{
+  background-color: transparent !important;
+}
+
+.transparent-background { 
+  background-color: rgba(0, 0, 0, 0); 
+}

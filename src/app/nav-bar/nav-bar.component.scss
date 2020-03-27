@@ -1,0 +1,55 @@
+@import "../../styleVars.scss";
+
+.navbar .brandimg {
+  border: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar .brand {
+  height: 100%;
+}
+
+.stm-navbar-brand {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brandimg {
+    border: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: auto;
+    height: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .brandimg {
+    border: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: auto;
+    height: 35px;
+  }
+}

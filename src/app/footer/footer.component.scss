@@ -1,0 +1,34 @@
+
+.foot{background:rgba(35,35,35,.85);color:#aaa;font-size:80%;}
+
+.foot {
+  width: 100%;
+}
+
+.foot .foot-widget{border-right:1px solid #1c1c1c}
+
+.foot .foot-widget p{color:#aaa;line-height:1.5em}
+
+.foot .foot-widget:last-child{border-right:none}
+
+.contact p {
+	text-align: center;
+    font-weight: 200px;
+}
+
+.disclaimer p {
+	text-align: left;
+	color:#66CCCC;
+}
+
+.contact strong {
+	text-align: center;
+	color:#66CCCC;
+}
+
+.contact h2 {
+	text-align: center;
+}
+
+
+

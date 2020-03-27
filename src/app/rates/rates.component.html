@@ -1,0 +1,80 @@
+<div class="row stm-txt">
+  <div class="col-md-12">		
+    <p style="font-size:large" align="center"><u><b>Rates for</b> <b *ngIf="type != serviceType.All">{{ type }}</b> <b>Massage</b></u></p>
+  </div>
+</div>
+
+
+<div [ngSwitch]="service.type">
+  <div *ngSwitchCase="serviceType.Traditional">
+      <div *ngFor="let massagerate of massageRates">
+        <div class="row stm-txt">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-2">
+            <p>{{massagerate.name}}</p>
+          </div>
+          <div class="col-md-2">
+            <p>{{massagerate.price}}</p>
+          </div>
+          <div class="col-md-4">
+          </div>
+        </div>
+      </div>
+  </div>
+  <div *ngSwitchCase="serviceType.Ashiatsu">
+    <div *ngFor="let ashiatsuRate of ashiatsuRates">
+      <div class="row stm-txt">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-2">
+          <p>{{ashiatsuRate.name}}</p>
+        </div>
+        <div class="col-md-2">
+          <p>{{ashiatsuRate.price}}</p>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <div *ngSwitchDefault>
+    <div *ngFor="let massagerate of massageRates">
+      <div class="row stm-txt">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-3">
+          <p>
+            {{massagerate.name}} <a routerLink="/{{massagerate.link}}" class="stm-hyperlinks">{{massagerate.type}}</a>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <p>{{massagerate.price}}</p>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+    </div>
+    <div *ngFor="let ashiatsuRate of ashiatsuRates">
+      <div class="row stm-txt">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-3">
+          <p>
+            {{ashiatsuRate.name}} <a routerLink="/{{ashiatsuRate.link}}" class="stm-hyperlinks">{{ashiatsuRate.type}}</a>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <p>{{ashiatsuRate.price}}</p>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+
+      
+    

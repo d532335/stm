@@ -1,0 +1,9 @@
+<span class ="telephone">
+  <strong>Telephone</strong>
+  <br/>
+  <a class="stm-hyperlinks" *ngIf="isMobile()" align="center" [href]="'tel:+' + globals.telephone">
+    {{globals.telephone}}
+    </a>
+  <span class="stm-txt" id="number" *ngIf="!isMobile()">{{globals.telephone}}</span>
+  <br/>
+</span>

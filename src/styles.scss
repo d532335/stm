@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~animate.css/animate.min.css";
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  background: url(./assets/img/backgrounds/BlueBackground.jpg) fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+#stm-breadcrumbs .breadcrumb {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.page-header {
+  color: #eaeaea;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1999999999999996);
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.page-header h1 {
+  margin-top: 0px;
+  font-size: 2em;
+  margin: 0.67em 0;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+
+.page-header span {
+  margin-right: 0.5em;
+  color: rgba(255, 255, 255, 0.300000000000004);
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    margin-top: 10px;
+  }
+}
+
+.stm-txt {
+  color: white;
+  font-family: Papyrus, Trebuchet MS, Arial, Helvetica;
+  font-size: large;
+  height: 100%;
+  width: auto;
+}
+
+.stm-hyperlinks {
+  color: #66cccc;
+  text-decoration: underline;
+  font-weight: inherit;
+}
+
+.stm-hyperlinks:hover {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h1.stm-head {
+  height: 100px;
+  letter-spacing: 1pt;
+  font-variant: small-caps;
+  font-family: Papyrus;
+  font-size: xx-large;
+  margin-bottom: 0;
+}
+
+h1.stm-head strong {
+  font-family: Papyrus;
+  font-size: xx-large;
+}

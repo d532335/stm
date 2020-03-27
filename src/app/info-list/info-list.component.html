@@ -1,0 +1,20 @@
+
+<div class="stm-txt">
+  <mat-list>
+    <h2 mat-subheader *ngIf="header" class="list-header">{{ header }}</h2>
+    <mat-list-item *ngFor="let item of items" class="list-item">
+      <mat-icon mat-list-icon class="list-icon transparent  transparent-background" svgIcon="stm-foot"></mat-icon>
+      <h4 mat-line class="stm-txt">
+        <div *ngIf="needsDynamicCompiled(item); else staticHTML"> 
+          <!-- Have to find another way to dynamically load HTML -->
+          <!-- stmHtmlOutlet [html]="item"></stmHtmlOutlet -->
+        </div>
+        <ng-template #staticHTML>
+            <div [innerHTML]="item | keepHtml"></div>
+        </ng-template>
+      </h4>
+    </mat-list-item>
+  </mat-list>
+</div>
+
+				
