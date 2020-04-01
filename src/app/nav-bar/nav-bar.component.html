@@ -1,68 +1,73 @@
 <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark py-0">
-    <div class="container-fluid">
-        <a class="navbar-brand stm-nav stm-navbar-brand" title="STM" routerLink="/home">
-            <img class="brandimg stm-navbar-brand" align="center" title="704-473-0712" alt="704-473-0712"
-                src="assets/img/brand.ico" />
-        </a>
 
-        <button type="button" id="hamburger" class="navbar-toggle collapsed navbar-toggler navbar-toggler-right"
-            (click)="isCollapsed = !isCollapsed" data-target="#stmNavbar" data-toggle="collapse" aria-expanded="false"
-            aria-controls="stmNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <a class="navbar-brand stm-nav stm-navbar-brand mx-0" title="STM" routerLink="/home" (click)="closeNavbarIfOpen()">
+        <img src="assets/img/brand.ico" class="img-fluid brandimg stm-navbar-brand" title="704-473-0712"
+            alt="704-473-0712">
+    </a>
 
-        <div class="collapse navbar-collapse stm-txt" [class.collapse]="isCollapsed" id="stmNavbar"
-            (window:resize)="isCollapsed = true">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item stm-nav m-1 py-0">
-                    <a class="nav-link stm-nav m-1" routerLink="/home" data-toggle="collapse"
-                        data-target=".navbar-collapse.show">Home<span class="sr-only">(current)</span></a>
-                </li>
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <li class="nav-item dropdown m-1 py-0" dropdown>
-                    <a dropdownToggle id="stmNavDropDownMenu" class="dropdown-toggle nav-link stm-nav m-1"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services<span
-                            class="caret"></span></a>
+    <div id="stmNavbar" class="collapse navbar-collapse stm-txt" [ngClass]="{ 'show': isNavOpen }">
+        <ul class="navbar-nav mr-auto">
 
-                    <ul *dropdownMenu class="dropdown-menu bg-dark" role="menu" aria-labelledby="stmNavDropDownMenu">
+            <li class="nav-item stm-nav m-1 pl-3 py-0 stm-FirstNavItem">
+                <a class="nav-link stm-nav m-1" routerLink="/home" (click)="toggleNavbar()">Home<span
+                        class="sr-only">(current)</span></a>
+            </li>
 
-                        <li role="menuitem">
-                            <a class="dropdown-item stm-nav text-secondary" routerLink="/menu">Menu of Services</a>
-                        </li>
+            <li class="nav-item dropdown stm-nav m-1 py-0" stmDropDown #r="stmDropDown">
 
-                        <li class="divider dropdown-divider"></li>
-                        <li role="menuitem">
-                            <a class="dropdown-item stm-nav text-secondary" routerLink="/massage">Traditional
-                                Massage</a>
-                        </li>
-                        <li role="menuitem">
-                            <a class="dropdown-item stm-nav text-secondary" routerLink="/ashiatsu">Ashiatsu</a>
-                        </li>
-                        <li role="menuitem">
-                            <a class="dropdown-item stm-nav text-secondary" routerLink="/maternity">Maternity
-                                Massage</a>
-                        </li>
-                        <li class="divider dropdown-divider"></li>
-                        <li role="menuitem">
-                            <a class="dropdown-item stm-nav text-secondary" routerLink="/cupping">Cupping</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="navbar-nav navbar-right ml-auto">
-                <li class="nav-item py-0">
-                    <a class="nav-link stm-nav m-1" routerLink="/faqs">FAQs</a>
-                </li>
-                <li class="nav-item py-0">
-                    <a class="nav-link stm-nav m-1" routerLink="/directions">Directions</a>
-                </li>
-                <li class="nav-item py-0">
-                    <a class="nav-link stm-nav m-1" routerLink="/about">About</a>
-                </li>
-                <li class="nav-item py-0">
-                    <a class="nav-link stm-nav m-1" routerLink="/contact">Contact me</a>
-                </li>
-            </ul>
-        </div>
+                <a class="nav-link dropdown-toggle stm-nav m-1" onclick="return false;" id="stmNavbarDropdownMenu"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+
+                <div class="dropdown-menu dropdown-menu-right avatar bg-dark" aria-labelledby="stmNavbarDropdownMenu">
+                    <div class="sidebar-scroll" id="services-group">
+
+                        <a class="dropdown-item stm-txt" routerLink="/menu" (click)="toggleNavbar()">
+                            <span class="d-xs-none">Menu of Services</span>
+                        </a>
+                        <a class="dropdown-item stm-txt" routerLink="/massage" (click)="toggleNavbar()">
+                            <span class=" d-xs-none">Traditional Massage</span>
+                        </a>
+
+                        <a class="dropdown-item stm-txt" routerLink="/ashiatsu" (click)="toggleNavbar()">
+                            <span class=" d-xs-none">Ashiatsu Massage</span>
+                        </a>
+
+                        <a class="dropdown-item stm-txt" routerLink="/maternity" (click)="toggleNavbar()">
+                            <span class=" d-xs-none">Maternity Massage</span>
+                        </a>
+
+                        <a class="dropdown-item stm-txt" routerLink="/cupping" (click)="toggleNavbar()">
+                            <span class=" d-xs-none">Cupping</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-right ml-auto">
+            <li class="nav-item stm-nav mr-auto py-0">
+                <a class="nav-link stm-nav m-1" routerLink="/faqs" (click)="toggleNavbar()">FAQs<span
+                        class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item stm-nav m-1 py-0">
+                <a class="nav-link stm-nav m-1" routerLink="/directions" (click)="toggleNavbar()">Directions<span
+                        class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item stm-nav m-1 py-0">
+                <a class="nav-link stm-nav m-1" routerLink="/about" (click)="toggleNavbar()">About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item stm-nav m-1 py-0">
+                <a class="nav-link stm-nav m-1" routerLink="/contact" (click)="toggleNavbar()">Contact<span
+                        class="sr-only">(current)</span></a>
+            </li>
+
+        </ul>
     </div>
 </nav>

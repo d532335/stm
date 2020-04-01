@@ -14,16 +14,6 @@
   color: white;
 }
 
-.dropdown .dropdown-item:hover {
-  background: rgb(182, 182, 182);
-  color: #000;
-}
-
-.dropdown .dropdown-item:focus {
-  background: whitesmoke;
-  color: #000;
-}
-
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
@@ -52,10 +42,6 @@
     width: auto;
     height: 25px;
   }
-
-  .pl-3 {
-    padding-left: ($spacer * 0.5) !important;
-  }
 }
 
 @media (min-width: 768px) {
@@ -65,9 +51,5 @@
     padding-right: 0px;
     width: auto;
     height: 35px;
-  }
-
-  .pl-3 {
-    padding-left: ($spacer) !important;
   }
 }

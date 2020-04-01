@@ -1,0 +1,68 @@
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark py-0">
+    <div class="container-fluid">
+        <a class="navbar-brand stm-nav stm-navbar-brand" title="STM" routerLink="/home">
+            <img class="brandimg stm-navbar-brand" align="center" title="704-473-0712" alt="704-473-0712"
+                src="assets/img/brand.ico" />
+        </a>
+
+        <button type="button" id="hamburger" class="navbar-toggle collapsed navbar-toggler navbar-toggler-right"
+            (click)="isCollapsed = !isCollapsed" data-target="#stmNavbar" data-toggle="collapse" aria-expanded="false"
+            aria-controls="stmNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse stm-txt" [class.collapse]="isCollapsed" id="stmNavbar"
+            (window:resize)="isCollapsed = true">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item stm-nav m-1 py-0">
+                    <a class="nav-link stm-nav m-1" routerLink="/home" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">Home<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown m-1 py-0" dropdown>
+                    <a dropdownToggle id="stmNavDropDownMenu" class="dropdown-toggle nav-link stm-nav m-1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services<span
+                            class="caret"></span></a>
+
+                    <ul *dropdownMenu class="dropdown-menu bg-dark" role="menu" aria-labelledby="stmNavDropDownMenu">
+
+                        <li role="menuitem">
+                            <a class="dropdown-item stm-nav text-secondary" routerLink="/menu">Menu of Services</a>
+                        </li>
+
+                        <li class="divider dropdown-divider"></li>
+                        <li role="menuitem">
+                            <a class="dropdown-item stm-nav text-secondary" routerLink="/massage">Traditional
+                                Massage</a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="dropdown-item stm-nav text-secondary" routerLink="/ashiatsu">Ashiatsu</a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="dropdown-item stm-nav text-secondary" routerLink="/maternity">Maternity
+                                Massage</a>
+                        </li>
+                        <li class="divider dropdown-divider"></li>
+                        <li role="menuitem">
+                            <a class="dropdown-item stm-nav text-secondary" routerLink="/cupping">Cupping</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right ml-auto">
+                <li class="nav-item py-0">
+                    <a class="nav-link stm-nav m-1" routerLink="/faqs">FAQs</a>
+                </li>
+                <li class="nav-item py-0">
+                    <a class="nav-link stm-nav m-1" routerLink="/directions">Directions</a>
+                </li>
+                <li class="nav-item py-0">
+                    <a class="nav-link stm-nav m-1" routerLink="/about">About</a>
+                </li>
+                <li class="nav-item py-0">
+                    <a class="nav-link stm-nav m-1" routerLink="/contact">Contact me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

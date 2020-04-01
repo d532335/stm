@@ -67,7 +67,6 @@ import { ContactInfoComponent } from "./contact-info/contact-info.component";
 import { AboutComponent } from "./about/about.component";
 import { DirectionsComponent } from "./directions/directions.component";
 import { MapComponent } from "./map/map.component";
-import { DropDownDirective } from "./drop-down.directive";
 
 const appRoutes: Routes = [
   {
@@ -162,8 +161,7 @@ const appRoutes: Routes = [
     ContactInfoComponent,
     AboutComponent,
     DirectionsComponent,
-    MapComponent,
-    DropDownDirective
+    MapComponent
   ],
   imports: [
     BrowserModule,
