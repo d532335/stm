@@ -48,15 +48,21 @@
             </li>
         </ul>
         <ul class="navbar-nav navbar-right ml-auto">
+
+            <li class="nav-item stm-nav mr-auto py-0">
+                <a class="nav-link stm-nav m-1" routerLink="/gifts" (click)="toggleNavbar()">Gift Certificates<span
+                        class="sr-only">(current)</span></a>
+            </li>
+
             <li class="nav-item stm-nav mr-auto py-0">
                 <a class="nav-link stm-nav m-1" routerLink="/faqs" (click)="toggleNavbar()">FAQs<span
                         class="sr-only">(current)</span></a>
             </li>
 
-            <li class="nav-item stm-nav m-1 py-0">
+            <!-- li class="nav-item stm-nav m-1 py-0">
                 <a class="nav-link stm-nav m-1" routerLink="/directions" (click)="toggleNavbar()">Directions<span
                         class="sr-only">(current)</span></a>
-            </li>
+            </li -->
 
             <li class="nav-item stm-nav m-1 py-0">
                 <a class="nav-link stm-nav m-1" routerLink="/about" (click)="toggleNavbar()">About<span

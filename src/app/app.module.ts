@@ -1,4 +1,3 @@
-// Foundational Modules
 import { NgModule } from "@angular/core";
 
 // Angular support Modules
@@ -30,7 +29,7 @@ import { AgmDirectionModule } from "agm-direction";
 // import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 //import { AccordionModule } from "ngx-bootstrap/accordion";
 //import { BsDropdownModule } from "ngx-bootstrap/dropdown";
-//import { CarouselModule } from "ngx-bootstrap/carousel";
+import { CarouselModule } from "ngx-bootstrap/carousel";
 //import { CollapseModule } from "ngx-bootstrap/collapse";
 
 // My Components
@@ -43,11 +42,14 @@ import { HomeComponent } from "./home/home.component";
 import { MaternityComponent } from "./maternity/maternity.component";
 import { FooterComponent } from "./footer/footer.component";
 import { EmailComponent } from "./email/email.component";
+import { GiftCertificateComponent } from "./gift-certificate/gift-certificate.component";
+
 import { AddressComponent } from "./address/address.component";
 import { TelephoneComponent } from "./telephone/telephone.component";
 import { CreditsComponent } from "./credits/credits.component";
 import { HeaderComponent } from "./header/header.component";
 import { CarouselComponent } from "./carousel/carousel.component";
+
 import {
   IntakeformComponent,
   IntakeFormDialogComponent
@@ -112,6 +114,11 @@ const appRoutes: Routes = [
     data: { breadcrumbs: BreadcrumbsResolver, crumb: "FAQs" }
   },
   {
+    path: "gifts",
+    component: GiftCertificateComponent,
+    data: { breadcrumbs: BreadcrumbsResolver, crumb: "Gift Certificates" }
+  },
+  {
     path: "contact",
     component: ContactInfoComponent,
     data: { breadcrumbs: BreadcrumbsResolver, crumb: "Contact Me" }
@@ -143,6 +150,7 @@ const appRoutes: Routes = [
     MaternityComponent,
     FooterComponent,
     EmailComponent,
+    GiftCertificateComponent,
     AddressComponent,
     TelephoneComponent,
     CreditsComponent,
@@ -173,7 +181,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     //AccordionModule.forRoot(), // for bootstrap
     //CollapseModule.forRoot(), // for bootstrap
-    //CarouselModule.forRoot(), // for bootstrap
+    CarouselModule.forRoot(), // for bootstrap
     //BsDropdownModule.forRoot(), // for bootstrap
     //DeviceDetectorModule.forRoot(),
     MatDialogModule,

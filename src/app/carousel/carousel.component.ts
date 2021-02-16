@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef, AfterViewInit} from '@angular/core';
 import * as _ from "lodash";
 
+
 @Component({
   selector: 'stm-carousel',
   templateUrl: './carousel.component.html',
