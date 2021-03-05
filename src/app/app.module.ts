@@ -197,7 +197,7 @@ const appRoutes: Routes = [
       libraries: ["places"]
     }),
     AgmDirectionModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'})
     //McBreadcrumbsModule.forRoot()
   ],
   entryComponents: [IntakeformComponent, IntakeFormDialogComponent],
