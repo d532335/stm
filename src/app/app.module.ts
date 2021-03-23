@@ -70,6 +70,7 @@ import { AboutComponent } from "./about/about.component";
 import { DirectionsComponent } from "./directions/directions.component";
 import { MapComponent } from "./map/map.component";
 import { DropDownDirective } from "./drop-down.directive";
+//import { SafeHtmlDirective } from //'./safe-html.directive';
 
 const appRoutes: Routes = [
   {

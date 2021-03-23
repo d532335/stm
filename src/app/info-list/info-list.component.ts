@@ -30,4 +30,7 @@ export class InfoListComponent implements OnInit {
     return (_.includes(item, "routerLink")); 
   }
 
+  sanitizedHtml(item: string){
+    return this.domSanitizer.bypassSecurityTrustHtml(item);
+  }
 }

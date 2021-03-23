@@ -12,8 +12,7 @@ export class MassageComponent implements OnInit {
 
   types: string[] = [
     "<b>Swedish Massage</b><span>- A relaxing, gentle massage to nourish the body and relieve stress</span>",
-    "<b>Neuromuscular Therapy</b><span>- Identifies areas of abnormality and manipulates tissues and tendon attachments to normalize and restore function</span>",
-    "<b><a class='stm-hyperlinks' routerLink='/maternity'>Table for Two Maternity Massage</a></b><span>- Relieves the discomforts of pregnancy, such as edema and lethargy, and prepares the body for an easier delivery and faster recovery</span>",
+    "<a class='stm-hyperlinks' href='/maternity'>Table for Two Maternity Massage</a><span>- Relieves the discomforts of pregnancy, such as edema and lethargy, and prepares the body for an easier delivery and faster recovery</span>",
     "<b>Trigger Point Therapy</b><span>- Trigger points are areas of hyperirrability within the muscle that cause spasms and pain. Extinguishing these areas can provide more mobility and less discomfort</span>"
   ];
 
