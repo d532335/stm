@@ -1,7 +1,7 @@
 <div class="stm-txt">
   <mat-list>
     <h2 mat-subheader *ngIf="header" class="list-header">{{ header }}</h2>
-    <mat-list-item *ngFor="let item of items" class="list-item m-lg-4 m-sm-5">
+    <mat-list-item *ngFor="let item of items" class="list-item my-lg-4 my-sm-5 my-6">
       <mat-icon mat-list-icon class="list-icon transparent  transparent-background" svgIcon="stm-foot"></mat-icon>
       <h4 mat-line class="stm-txt text-wrap">
         <div *ngIf="needsDynamicCompiled(item); else staticHTML">
