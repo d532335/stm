@@ -36,36 +36,31 @@ export class MassageFaqsComponent implements OnInit {
     },
     {
       id: 6,
-      title: "Are There Different Kinds of Massage and Bodywork?",
-      content: "<div>There are many different modalities and these vary from therapist to therapist. Visit my <a class='stm-hyperlinks' routerLink='/menu'>services</a> page to see the types of massage and bodywork that I offer.</div>"
-    },
-    {
-      id: 7,
       title: "How Long Will the Session Last?",
       content: "I offer 30 min, one hour and 90 minute sessions."
     },
     {
-      id: 8,
+      id: 7,
       title: "What Should I Do During the Massage or Bodywork Session?",
       content: "Relax and make yourself as comfortable as possible. I will guide you through any movement or action required of you for our session. Feel free to ask any questions about any of the techniques you are receiving."
     },
     {
-      id: 9,
+      id: 8,
       title: "What if I am late for an appointment?",
       content: "If you are late for an appointment the session will be adjusted to perform as much of the treatment as possible within the remaining time. Pricing will not be adjusted."
     },
     {
-      id: 10,
+      id: 9,
       title: "What preparations do I need to make?",
       content: "Try to limit intake of food prior to your session to light meals, preferably of whole foods. Also, water intake is very important prior to and after bodywork. You will want to make sure you allow time to use the rest room prior to your appointment."
     },
     {
-      id: 11,
+      id: 10,
       title: "Should I inform my therapist if I have any ailments or allergies?",
       content: "Yes. Please notify me as soon as you can. Adjustments to some treatments can be made or alternative treatments may be substituted. If you require special assistance, please let me know so that I can assure you a pleasant experience."
     },
     {
-      id: 12,
+      id: 11,
       title: "How frequently should I schedule massage appointments to feel the greatest benefit?",
       content: "The benefits of massage are greatest over time. If you have decided to use massage to treat long term pain management, more frequent sessions may be necessary in the beginning to return the muscles to a more manageable condition. People's need for massage varies with person and conditions. Some do well on monthly visits while others need to work more frequently. You and I will discuss your goals and determine the best schedule for you and your needs."
     }

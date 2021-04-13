@@ -6,6 +6,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms"; // required for ngModel
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from "@angular/common/http";
+import { LayoutModule } from '@angular/cdk/layout';
 
 // Angular Material Modules
 //import { MatComponentModule } from './mat-component.module';
@@ -180,6 +181,7 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    LayoutModule,
     //AccordionModule.forRoot(), // for bootstrap
     //CollapseModule.forRoot(), // for bootstrap
     CarouselModule.forRoot(), // for bootstrap
