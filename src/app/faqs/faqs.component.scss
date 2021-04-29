@@ -5,12 +5,20 @@
 
 .faq {
     background-color: rgb(31,84,176);
+    height: auto!important; 
 }
 
 .content {
     color: GhostWhite;
 }
 
+.mat-panel-title {
+    height: 100%;
+}
+
+.mat-expansion-panel {
+    height: 100%;
+  }
 .mat-expansion-panel strong {
     color: linen;
 }
