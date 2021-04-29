@@ -1,0 +1,11 @@
+
+ng build --prod
+
+in index.html on header and body
+<base href="/alpha2021/stm/" />
+
+
+
+server - ftp.simpletouchmassage.com
+
+simpleto
