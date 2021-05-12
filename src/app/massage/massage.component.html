@@ -8,36 +8,17 @@
   </div>
 
   <div class="row">
-    <div class="col-md-12">
-      <p align="center"><img class="img-responsive img-fluid abalrule" src="assets/img/abalrule.gif"></p>
+    <div class="col-md-7">
+      <stm-info-list [items]='types' class="stmBullets stm-txt"></stm-info-list>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-12 stm-txt">
-      <stm-info-list [items]='types' class="stm-txt"></stm-info-list>
-    </div>
-  </div>
+    <div class="col-md-5 stm-txt">
 
-  <div class="row">
-    <div class="col-md-12">
-      <p align="center"><img class="img-responsive img-fluid abalrule" src="assets/img/abalrule.gif"></p>
     </div>
+
   </div>
 
   <stm-rates [type]="serviceType"></stm-rates>
-
-  <div class="row">
-    <div class="col-md-12">
-      <p align="center"><img class="img-responsive img-fluid abalrule" src="assets/img/abalrule.gif"></p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-12 stm-txt">
-      <stm-info-list [items]='otherTypes' [header]='otherTypesHeader' class="stm-txt"></stm-info-list>
-    </div>
-  </div>
 
   <br>
   <div class="row stm-txt">
@@ -87,7 +68,7 @@
 
   <div class="row">
     <div class="col-md-12 stm-txt">
-      <stm-info-list [items]='policies' header='Policies' class="stm-txt"></stm-info-list>
+      <stm-info-list [items]='policies' header='Policies' class="stmBullets stm-txt"></stm-info-list>
     </div>
   </div>
   <div class="row">

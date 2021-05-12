@@ -5,10 +5,10 @@
       <mat-icon mat-list-icon class="list-icon transparent  transparent-background" svgIcon="stm-foot"></mat-icon>
       <h4 mat-line class="stm-txt text-wrap">
         <div *ngIf="needsDynamicCompiled(item); else staticHTML">
-          <div [innerHTML]="sanitizedHtml(item)"></div>
+          <div id="dynamicContent" [innerHTML]="sanitizedHtml(item)" class="stmBullets stm-txt my-6"></div>
         </div>
         <ng-template #staticHTML>
-          <div [innerHTML]="item | keepHtml"></div>
+          <div id="staticContent" [innerHTML]="item | keepHtml" class="stmBullets stm-txt"></div>
         </ng-template>
       </h4>
     </mat-list-item>

@@ -9,7 +9,7 @@
 <div [ngSwitch]="service.type">
   <div *ngSwitchCase="serviceType.Traditional">
     <div *ngFor="let massagerate of massageRates">
-      <div class="row stm-txt">
+      <div class="row stm-txt border border-light">
         <div class="col-md-4">
         </div>
         <div class="col-md-2">
@@ -25,7 +25,7 @@
   </div>
   <div *ngSwitchCase="serviceType.Ashiatsu">
     <div *ngFor="let ashiatsuRate of ashiatsuRates">
-      <div class="row stm-txt">
+      <div class="row stm-txt border border-light">
         <div class="col-md-4">
         </div>
         <div class="col-md-2">
@@ -42,7 +42,7 @@
 
   <div *ngSwitchDefault>
     <div *ngFor="let massagerate of massageRates">
-      <div class="rates row stm-txt ">
+      <div class="rates row stm-txt border border-light">
         <div class="col-md-4">
         </div>
         <div class="col-md-3">
@@ -58,7 +58,7 @@
       </div>
     </div>
     <div *ngFor="let ashiatsuRate of ashiatsuRates">
-      <div class="rates row stm-txt ">
+      <div class="rates row stm-txt border border-light">
         <div class="col-md-4">
         </div>
         <div class="col-md-3">

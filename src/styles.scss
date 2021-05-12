@@ -4,6 +4,8 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "~bootstrap/dist/css/bootstrap.css";
 
+$enable-responsive-font-sizes: true;
+
 body {
   background: url(./assets/img/backgrounds/BlueBackground.jpg) fixed;
   -webkit-background-size: cover;
