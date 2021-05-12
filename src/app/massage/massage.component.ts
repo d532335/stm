@@ -16,13 +16,6 @@ export class MassageComponent implements OnInit {
     "<b>Custom Therapeutic Session</b>- Any combination of deep tissue, neuromuscular or <a class='stm-hyperlinks' href='/cupping'>cupping</a> designed to address muscle tension and restoring range of motion."
   ];
 
-  otherTypesHeader: string = "Other Massage & Bodywork Services";
-  otherTypes: string[] = [
-    "<b>Headache Session: </b>A head and neck session that focuses on relaxing the tightened muscles that cause many tension-related headaches - 15-20 minutes $20",
-    "<b>Sinus Massage: </b>Combat sinus pain and pressure without drugs! This sessions helps provide relief from congestion and swelling by massaging the face and neck in specific pressure points to open sinuses and allow for drainage - 15 minutes $20",
-    "<b>Hands and Feet Session: </b>Pampers hands and feet with a combination of reflexology, stretching and stimulating massage techniques. Great for anyone who  may suffer from carpal tunnel, arthritis or other wrist and ankle problems - 20-25 minutes $25"
-  ];
-
   policies: string[] = [
     "Cancellation policy requires 24-hour prior notice; otherwise full charge is made for the session.",
     "Payment is due for services rendered at time of treatment.",
