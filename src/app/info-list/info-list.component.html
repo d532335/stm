@@ -1,8 +1,23 @@
 <div class="stm-txt">
-  <mat-list>
+  <h3 *ngIf="header">{{ header }}</h3>
+  <ul class="list-group list-group-flush">
+    <li *ngFor="let item of items">
+      <div *ngIf="needsDynamicCompiled(item); else staticHTML">
+        <div id="dynamicContent" [innerHTML]="sanitizedHtml(item)"></div>
+      </div>
+      <ng-template #staticHTML>
+        <div id="staticContent" [innerHTML]="item | keepHtml"></div>
+      </ng-template>
+    </li>
+  </ul>
+
+
+  <!--mat-list>
     <h2 mat-subheader *ngIf="header" class="list-header">{{ header }}</h2>
     <mat-list-item *ngFor="let item of items" class="list-item my-lg-4 my-sm-5 my-6">
+      
       <mat-icon mat-list-icon class="list-icon transparent  transparent-background" svgIcon="stm-foot"></mat-icon>
+      
       <h4 mat-line class="stm-txt text-wrap">
         <div *ngIf="needsDynamicCompiled(item); else staticHTML">
           <div id="dynamicContent" [innerHTML]="sanitizedHtml(item)" class="stmBullets stm-txt my-6"></div>
@@ -11,6 +26,7 @@
           <div id="staticContent" [innerHTML]="item | keepHtml" class="stmBullets stm-txt"></div>
         </ng-template>
       </h4>
+
     </mat-list-item>
-  </mat-list>
+  </mat-list -->
 </div>
