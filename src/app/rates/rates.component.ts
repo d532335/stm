@@ -28,13 +28,11 @@ export class RatesComponent implements OnInit {
 
   massageRates: IRates[] = [
       {"type": "Traditional", "name": "- 30 minutes", "price":"$50", "link":"massage"},
-      {"type": "Traditional", "name": "- 1 hour", "price":"$70", "link":"massage"},
-      {"type": "Traditional", "name": "- 90 minutes", "price":"$90", "link":"massage"}
+      {"type": "Traditional", "name": "- 1 hour", "price":"$70", "link":"massage"}
   ];
 
   ashiatsuRates: IRates[] = [
-      {"type": "Ashiatsu", "name": "- 1 hour", "price":"$90", "link":"ashiatsu"},
-      {"type": "Ashiatsu", "name": "- 90 minutes", "price":"$120", "link":"ashiatsu"},
+      {"type": "Ashiatsu", "name": "- 1 hour", "price":"$90", "link":"ashiatsu"}
   ];
 
   constructor() { 
