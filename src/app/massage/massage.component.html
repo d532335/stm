@@ -9,15 +9,35 @@
 
   <div class="row">
     <div class="col-md-7">
-      <stm-info-list [items]='types' class="stmBullets stm-txt"></stm-info-list>
+      <div class="stm-txt stmBullets">
+        <ul class="list-group">
+          <li class="transparent transparent-background">
+            <div id="swedishType">
+              <b>Swedish Massage</b>A relaxing, gentle massage to nourish the body and relieve stress
+            </div>
+          </li>
+          <li class="transparent transparent-background">
+            <div id="maternityType">
+              <a class='stm-hyperlinks' routerLink="/maternity">Table for Two Maternity Massage</a>- Relieves the
+              discomforts
+              of pregnancy, such as edema and lethargy, and prepares the body for an easier delivery and faster recovery
+            </div>
+          </li>
+          <li class="transparent transparent-background">
+            <div id="therapeuticType">
+              <b>Custom Therapeutic Session</b>- Any combination of deep tissue, neuromuscular or <a
+                class='stm-hyperlinks' routerLink="/cupping">cupping</a> designed to address muscle tension and
+              restoring
+              range of motion.
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-
     <div class="col-md-5 stm-txt">
-
     </div>
 
   </div>
-
   <stm-rates [type]="serviceType"></stm-rates>
 
   <br>
@@ -95,6 +115,5 @@
   </div>
 
   <br>
-
   <stm-intake-form></stm-intake-form>
 </div>
