@@ -1,0 +1,69 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+
+.list-header {
+  color: white;
+  font-family: Papyrus, Trebuchet MS, Arial, Helvetica !important;
+  font-size: large !important;
+  height: 100% !important;
+  width: auto;  
+}
+
+
+@include media-breakpoint-down(xl) {
+  .my-6 {
+    margin-top: ($spacer * 3.5) !important;
+    margin-bottom: ($spacer * 3.5) !important;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .my-6 {
+    margin-top: ($spacer * 3) !important;
+    margin-bottom: ($spacer * 3.5) !important;
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+  .my-6 {
+    margin-top: ($spacer * 4) !important;
+    margin-bottom: ($spacer * 4.5) !important;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .my-6 {
+    margin-top: ($spacer * 6) !important;
+    margin-bottom: ($spacer * 6.5) !important;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .my-6 {
+    margin-top: ($spacer * 13.5) !important;
+    margin-bottom: ($spacer * 12.5) !important;
+  }
+}
+
+  
+.list-item {
+  height: 30px !important;
+  font-size:larger !important;
+}
+
+.list-icon {
+  color: white;
+}
+
+.list-icon::before{
+    background:transparent;
+    background-color: transparent !important;
+}
+
+.transparent{
+  background-color: transparent !important;
+}
+
+.transparent-background { 
+  background-color: rgba(0, 0, 0, 0); 
+}
